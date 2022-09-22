@@ -1,0 +1,578 @@
+{% load static %}
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
+
+    <title>DigiCupid - Home</title>
+    <!-- static css  -->
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <!-- unicons icon pack css  -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css">
+  </head>
+  <body>
+
+    <!-- navigation bar  -->
+    <nav>
+      <div class="container">
+        <h2 class="logo">DigiCupid</h2>
+        <div class="search-bar">
+          <i class="uil uil-search"></i>
+          <input type="search" placeholder="Search for Creators">
+        </div>
+        <div class="create">
+          <label class="btn btn-primary" for="#create-post">Create</label>
+          <div class="profile-picture">
+            <img src="{% static 'images/profile-1.jpg' %}" alt="">
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ----------------main------------------ -->
+    <main>
+      <div class="container">
+        <!-- ----------------left------------------ -->
+        <div class="left">
+          <a class="profile">
+            <div class="profile-picture">
+              <img src="{%static 'images/profile-1.jpg' %}">
+            </div>
+            <div class="handle">
+              <h4>Diona cat</h4>
+              <p class="text-muted">@Diona</p>
+            </div>
+          </a>
+
+          <div class="sidebar">
+            <a class="menu-item active">
+              <span><i class="uil uil-home"></i></span><h3>Home</h3>
+            </a>
+            <a class="menu-item">
+              <span><i class="uil uil-compass"></i></span><h3>Explore</h3>
+            </a>
+            <a class="menu-item" id="notifications">
+              <span><i class="uil uil-bell"><small class="notification-count">9+</small></i></span><h3>Notifications</h3>
+              <!-- ---------------- Notificationa Pop-up --------------------  -->
+              <div class="notification-popup">
+                <div>
+                  <div class="profile-picture">
+                    <img src="{%static 'images/profile-2.jpg' %}">
+                  </div>
+                  <div class="notification-body">
+                    <b>Deepak Garg</b> accepted your Friend Request.
+                    <small class="text-muted">2 Days ago.</small>
+                  </div>
+                </div>
+                <div>
+                  <div class="profile-picture">
+                    <img src="{%static 'images/profile-3.jpg' %}">
+                  </div>
+                  <div class="notification-body">
+                    <b>Simran Kular</b> Commented on your Post.
+                    <small class="text-muted">2 Days ago.</small>
+                  </div>
+                </div>
+                <div>
+                  <div class="profile-picture">
+                    <img src="{%static 'images/profile-4.jpg' %}">
+                  </div>
+                  <div class="notification-body">
+                    <b>Abhishek Singh</b> Liked your Post.
+                    <small class="text-muted">2 Days ago.</small>
+                  </div>
+                </div>
+                <div>
+                  <div class="profile-picture">
+                    <img src="{%static 'images/profile-5.jpg' %}">
+                  </div>
+                  <div class="notification-body">
+                    <b>Shivam Sharma</b> accepted your Group Invite.
+                    <small class="text-muted">2 Days ago.</small>
+                  </div>
+                </div>
+                <div>
+                  <div class="profile-picture">
+                    <img src="{%static 'images/profile-6.jpg' %}">
+                  </div>
+                  <div class="notification-body">
+                    <b>Simran and 124 Others</b> Liked your Post.
+                    <small class="text-muted">2 Days ago.</small>
+                  </div>
+                </div>
+                <div>
+                  <div class="profile-picture">
+                    <img src="{%static 'images/profile-7.jpg' %}">
+                  </div>
+                  <div class="notification-body">
+                    <b>Manoj Mittal</b> started live stream.
+                    <small class="text-muted">2 Days ago.</small>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a class="menu-item" id="messages-notifications">
+              <span><i class="uil uil-envelopes"><small class="notification-count">18+</small></i></span><h3>Messages</h3>
+            </a>
+            <a class="menu-item">
+              <span><i class="uil uil-bookmark"></i></span><h3>Bookmarks</h3>
+            </a>
+            <a class="menu-item">
+              <span><i class="uil uil-chart-line"></i></span><h3>Analytics</h3>
+            </a>
+            <a class="menu-item">
+              <span><i class="uil uil-palette"></i></span><h3>Theme</h3>
+            </a>
+            <a class="menu-item">
+              <span><i class="uil uil-setting"></i></span><h3>Settings</h3>
+            </a>
+              
+          </div>
+          <!-- --------------- End of sidebar ----------------  -->
+          <label for="create-post" class="btn btn-primary">Create Post</label>
+        </div>
+
+
+        <!-- ----------------middle------------------ -->
+        <div class="middle">
+          <!-- ----------------stories------------------ -->
+          <div class="stories">
+            <div class="story">
+              <div class="profile-picture">
+                <img src="{%static 'images/profile-8.jpg' %}">
+              </div>
+              <p class="name">Your Story</p>
+            </div>
+            <div class="story">
+              <div class="profile-picture">
+                <img src="{%static 'images/profile-9.jpg' %}">
+              </div>
+              <p class="name">Deepak Garg</p>
+            </div>
+            <div class="story">
+              <div class="profile-picture">
+                <img src="{%static 'images/profile-10.jpg' %}">
+              </div>
+              <p class="name">Shivam Sharma</p>
+            </div>
+            <div class="story">
+              <div class="profile-picture">
+                <img src="{%static 'images/profile-11.jpg' %}">
+              </div>
+              <p class="name">Simran Kular</p>
+            </div>
+            <div class="story">
+              <div class="profile-picture">
+                <img src="{%static 'images/profile-12.jpg' %}">
+              </div>
+              <p class="name">Abhishek Singh</p>
+            </div>
+            <div class="story">
+              <div class="profile-picture">
+                <img src="{%static 'images/profile-13.jpg' %}">
+              </div>
+              <p class="name">Manoj Mittal</p>
+            </div>
+          </div>
+          <!-- ----------------End of stories------------------ -->
+
+          <form class="create-post">
+            <div class="profile-picture">
+              <img src="{%static 'images/profile-1.jpg' %}">
+            </div>
+            <input type="text" placeholder="What's on your mind?" id="create-post">
+            <input type="submit" value="Post" class="btn btn-primary">
+          </form>
+
+          <!-- ----------------Feeds------------------ -->
+          <div class="feeds">
+
+            <!-- ----------------Feed------------------ -->
+            <div class="feed">
+              <div class="head">
+                <div class="user">
+                  <div class="profile-picture">
+                    <img src="{%static 'images/profile-12.jpg' %}">
+                  </div>
+                  <div class="info">
+                    <h3>Diona Cat</h3>
+                    <small>Monstadt, 15 Minutes Ago</small>
+                  </div>
+                </div>                
+                <span class="edit">
+                  <i class="uil uil-ellipsis-h"></i>
+                </span>
+              </div>
+
+              <div class="photo">
+                <img src="{%static 'images/feed-1.jpg' %}">
+              </div>
+
+              <div class="action-buttons">
+                <div class="interaction-button">
+                  <span><i class="uil uil-heart"></i></span>
+                  <span><i class="uil uil-comment-dots"></i></span>
+                  <span><i class="uil uil-share-alt"></i></span>
+                </div>
+                <div class="bookmark">
+                  <span><i class="uil uil-bookmark"></i></span>
+                </div>
+              </div>
+
+              <div class="liked-by">
+                <span><img src="{%static 'images/profile-4.jpg' %}"></span>
+                <span><img src="{%static 'images/profile-14.jpg' %}"></span>
+                <span><img src="{%static 'images/profile-7.jpg' %}"></span>
+                <p>Liked by <b>Shivam</b> and <b>325 Others</b></p>
+              </div>
+
+              <div class="caption">
+                <p><b>Diona Cat</b> This is my Post caption for testing. <span class="hash-tag">#Nature</span></p>
+              </div>
+
+              <div class="caption text-muted">View all 277 Comments.</div>
+            </div>
+
+            <!-- ----------------Feed------------------ -->
+            <div class="feed">
+              <div class="head">
+                <div class="user">
+                  <div class="profile-picture">
+                    <img src="{%static 'images/profile-14.jpg' %}">
+                  </div>
+                  <div class="info">
+                    <h3>Satyam Sharma</h3>
+                    <small>Ludhiana, 5 Days Ago</small>
+                  </div>
+                </div>
+                <span class="edit">
+                  <i class="uil uil-ellipsis-h"></i>
+                </span>
+              </div>
+
+              <div class="photo">
+                <img src="{%static 'images/feed-2.jpg' %}">
+              </div>
+
+              <div class="action-buttons">
+                <div class="interaction-button">
+                  <span><i class="uil uil-heart"></i></span>
+                  <span><i class="uil uil-comment-dots"></i></span>
+                  <span><i class="uil uil-share-alt"></i></span>
+                </div>
+                <div class="bookmark">
+                  <span><i class="uil uil-bookmark"></i></span>
+                </div>
+              </div>
+
+              <div class="liked-by">
+                <span><img src="{%static 'images/profile-13.jpg' %}"></span>
+                <span><img src="{%static 'images/profile-12.jpg' %}"></span>
+                <span><img src="{%static 'images/profile-8.jpg' %}"></span>
+                <p>Liked by <b>Shivam</b> and <b>325 Others</b></p>
+              </div>
+
+              <div class="caption">
+                <p><b>Satyam Sharma</b> This is my Post caption for testing. <span class="hash-tag">#Nature</span></p>
+              </div>
+
+              <div class="caption text-muted">View all 457 Comments.</div>
+            </div>
+
+            <!-- ----------------Feed------------------ -->
+            <div class="feed">
+              <div class="head">
+                <div class="user">
+                  <div class="profile-picture">
+                    <img src="{%static 'images/profile-6.jpg' %}">
+                  </div>
+                  <div class="info">
+                    <h3>Deepak Garg</h3>
+                    <small>Sudhar, 3 Days Ago</small>
+                  </div>
+                </div>
+                <span class="edit">
+                  <i class="uil uil-ellipsis-h"></i>
+                </span>
+              </div>
+
+              <div class="photo">
+                <img src="{%static 'images/feed-3.jpg' %}">
+              </div>
+
+              <div class="action-buttons">
+                <div class="interaction-button">
+                  <span><i class="uil uil-heart"></i></span>
+                  <span><i class="uil uil-comment-dots"></i></span>
+                  <span><i class="uil uil-share-alt"></i></span>
+                </div>
+                <div class="bookmark">
+                  <span><i class="uil uil-bookmark"></i></span>
+                </div>
+              </div>
+
+              <div class="liked-by">
+                <span><img src="{%static 'images/profile-13.jpg' %}"></span>
+                <span><img src="{%static 'images/profile-12.jpg' %}"></span>
+                <span><img src="{%static 'images/profile-8.jpg' %}"></span>
+                <p>Liked by <b>Shivam</b> and <b>325 Others</b></p>
+              </div>
+
+              <div class="caption">
+                <p><b>Satyam Sharma</b> This is my Post caption for testing. <span class="hash-tag">#Nature</span></p>
+              </div>
+
+              <div class="caption text-muted">View all 457 Comments.</div>
+            </div>
+
+            <!-- ----------------Feed------------------ -->
+            <div class="feed">
+              <div class="head">
+                <div class="user">
+                  <div class="profile-picture">
+                    <img src="{%static 'images/profile-7.jpg' %}">
+                  </div>
+                  <div class="info">
+                    <h3>Simran Kular</h3>
+                    <small>Akalgarh, 4 Hours Ago</small>
+                  </div>
+                </div>
+                <span class="edit">
+                  <i class="uil uil-ellipsis-h"></i>
+                </span>
+              </div>
+
+              <div class="photo">
+                <img src="{%static 'images/feed-4.jpg' %}">
+              </div>
+
+              <div class="action-buttons">
+                <div class="interaction-button">
+                  <span><i class="uil uil-heart"></i></span>
+                  <span><i class="uil uil-comment-dots"></i></span>
+                  <span><i class="uil uil-share-alt"></i></span>
+                </div>
+                <div class="bookmark">
+                  <span><i class="uil uil-bookmark"></i></span>
+                </div>
+              </div>
+
+              <div class="liked-by">
+                <span><img src="{%static 'images/profile-13.jpg' %}"></span>
+                <span><img src="{%static 'images/profile-12.jpg' %}"></span>
+                <span><img src="{%static 'images/profile-8.jpg' %}"></span>
+                <p>Liked by <b>Shivam</b> and <b>325 Others</b></p>
+              </div>
+
+              <div class="caption">
+                <p><b>Satyam Sharma</b> This is my Post caption for testing. <span class="hash-tag">#Nature</span></p>
+              </div>
+
+              <div class="caption text-muted">View all 457 Comments.</div>
+            </div>
+
+            <!-- ----------------Feed------------------ -->
+            <div class="feed">
+              <div class="head">
+                <div class="user">
+                  <div class="profile-picture">
+                    <img src="{%static 'images/profile-8.jpg' %}">
+                  </div>
+                  <div class="info">
+                    <h3>Abhishek Singh</h3>
+                    <small>Ludhiana, 15 Days Ago</small>
+                  </div>
+                </div>
+                <span class="edit">
+                  <i class="uil uil-ellipsis-h"></i>
+                </span>
+              </div>
+
+              <div class="photo">
+                <img src="{%static 'images/feed-5.jpg' %}">
+              </div>
+
+              <div class="action-buttons">
+                <div class="interaction-button">
+                  <span><i class="uil uil-heart"></i></span>
+                  <span><i class="uil uil-comment-dots"></i></span>
+                  <span><i class="uil uil-share-alt"></i></span>
+                </div>
+                <div class="bookmark">
+                  <span><i class="uil uil-bookmark"></i></span>
+                </div>
+              </div>
+
+              <div class="liked-by">
+                <span><img src="{%static 'images/profile-13.jpg' %}"></span>
+                <span><img src="{%static 'images/profile-12.jpg' %}"></span>
+                <span><img src="{%static 'images/profile-8.jpg' %}"></span>
+                <p>Liked by <b>Shivam</b> and <b>325 Others</b></p>
+              </div>
+
+              <div class="caption">
+                <p><b>Satyam Sharma</b> This is my Post caption for testing. <span class="hash-tag">#Nature</span></p>
+              </div>
+
+              <div class="caption text-muted">View all 457 Comments.</div>
+            </div>
+
+          </div>
+
+        </div>
+
+
+
+        <!-- ----------------right------------------ -->
+        <div class="right">
+
+          <!-- ----------------Message Box------------------ -->
+          <div class="messages">
+            <div class="heading">
+              <h4>Messages</h4><i class="uil uil-edit"></i>
+            </div>
+
+            <!-- ----------------search bar------------------ -->
+            <div class="search-bar">
+              <i class="uil uil-search"></i>
+              <input type="search" placeholder="Search messages" id="message-search">
+            </div>
+
+            <!-- ----------------message category------------------ -->
+            <div class="category">
+              <h6 class="active">Primary</h6>
+              <h6>General</h6>
+              <h6 class="message-requests">Requests(2)</h6>
+            </div>
+
+            <!-- ----------------message------------------ -->
+            <div class="message">
+              <div class="profile-picture">
+                <img src="{%static 'images/profile-13.jpg' %}">
+              </div>
+              <div class="message-body">
+                <h5>Bomdy Builder</h5>
+                <p class="text-bold">Just Woke up bruh</p>
+              </div>
+            </div>
+
+            <div class="message">
+              <div class="profile-picture">
+                <img src="{%static 'images/profile-3.jpg' %}">
+                <div class="active"></div>
+              </div>
+              <div class="message-body">
+                <h5>Deepak</h5>
+                <p class="text-muted">thik aa</p>
+              </div>
+            </div>
+
+            <div class="message">
+              <div class="profile-picture">
+                <img src="{%static 'images/profile-14.jpg' %}">
+              </div>
+              <div class="message-body">
+                <h5>Abhishek Singh</h5>
+                <p class="text-bold">8:15 te aa jayi</p>
+              </div>
+            </div>
+
+            <div class="message">
+              <div class="profile-picture">
+                <img src="{%static 'images/profile-8.jpg' %}">
+                <div class="active"></div>
+              </div>
+              <div class="message-body">
+                <h5>Shivam Sharma</h5>
+                <p class="text-muted">Just Woke up</p>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- ----------------Friend Requests------------------ -->
+          <div class="friend-requests">
+            <h4>Requests</h4>
+
+
+            <div class="request">
+              <div class="info">
+                <div class="profile-picture">
+                  <img src="{%static 'images/profile-15.jpg' %}">
+                </div>
+                <div>
+                  <h5>Deepak Garg</h5>
+                  <p class="text-muted">
+                    8 Mutual friends
+                  </p>
+                </div>
+              </div>
+              <div class="action">
+                <button class="btn btn-primary">Accept</button>
+                <button class="btn">Decline</button>
+              </div>
+            </div>
+
+            <div class="request">
+              <div class="info">
+                <div class="profile-picture">
+                  <img src="{%static 'images/profile-7.jpg' %}">
+                </div>
+                <div>
+                  <h5>Abhishek Singh</h5>
+                  <p class="text-muted">
+                    16 Mutual friends
+                  </p>
+                </div>
+              </div>
+              <div class="action">
+                <button class="btn btn-primary">Accept</button>
+                <button class="btn">Decline</button>
+              </div>
+            </div>
+
+            <div class="request">
+              <div class="info">
+                <div class="profile-picture">
+                  <img src="{%static 'images/profile-4.jpg' %}">
+                </div>
+                <div>
+                  <h5>Komal</h5>
+                  <p class="text-muted">
+                    4 Mutual friends
+                  </p>
+                </div>
+              </div>
+              <div class="action">
+                <button class="btn btn-primary">Accept</button>
+                <button class="btn">Decline</button>
+              </div>
+            </div>
+
+
+
+          </div>
+        </div>
+      </div>
+    </main>
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
