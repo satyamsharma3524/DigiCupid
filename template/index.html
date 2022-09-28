@@ -567,7 +567,7 @@
     <div class="customize-theme">
       <div class="card">
         <h2>Customize your View</h2>
-        <p>Manage your Font-size, Color and Background.</p>
+        <p class="text-muted">Manage your Font-size, Color and Background.</p>
 
         <!-- ----------------Font-Sizes------------------ -->
         <div class="font-size">
@@ -576,7 +576,7 @@
             <h6>Aa</h6>
             <div class="choose-size">
               <span class="font-size-1"></span>
-              <span class="font-size-2"></span>
+              <span class="font-size-2 active"></span>
               <span class="font-size-3"></span>
               <span class="font-size-4"></span>
               <span class="font-size-5"></span>
@@ -601,7 +601,7 @@
         <div class="background">
           <h4>Background</h4>
           <div class="choose-bg">
-            <div class="bg-1">
+            <div class="bg-1 active">
               <span></span>
               <h5 for="bg-1">Light</h5>
             </div>
@@ -611,7 +611,7 @@
             </div>
             <div class="bg-3">
               <span></span>
-              <h5 for="bg-3">Night</h5>
+              <h5 for="bg-3">Lights Out</h5>
             </div>
           </div>
         </div>
@@ -621,6 +621,8 @@
 
 
 
+    <!-- ----------------Javascript Code File------------------ -->
+    <script src="{%static 'script.js' %}"></script>
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
