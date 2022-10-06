@@ -266,7 +266,7 @@ main .container .left .profile{
     width: 1.2rem;
     height: 1.2rem;
     display: block;
-    background: red;
+    background: white;
     position: absolute;
     left: -0.6rem;
     transform: rotate(45deg);
