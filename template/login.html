@@ -1,0 +1,54 @@
+{% load static %}
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
+
+    <title>DigiCupid - Login/SignUp</title>
+    <!-- static css  -->
+    <link rel="stylesheet" href="{% static 'login.css' %}">
+    <!-- unicons icon pack css  -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css">
+  </head>
+
+  <body>
+    <!-- ----------------main------------------ -->
+    <main>
+      <div class="container">
+        <label>DigiCupid</label>
+        <div class="main">  	
+            <input type="checkbox" id="chk" aria-hidden="true">
+    
+                <div class="signup">
+                    <form method="post" action="">
+                      {% csrf_token %}
+                        <label for="chk" aria-hidden="true">Sign up</label>
+                        <input type="text" name="username" placeholder="User name" required="">
+                        <input type="email" name="email" placeholder="Email" required="">
+                        <input type="password" name="pswd" placeholder="Password" required="">
+                        <input type="password" name="pswd2" placeholder="Confirm Password" required="">
+                        <button>Sign up</button>
+                    </form>
+                </div>
+    
+                <div class="login">
+                    <form method="post" action="home">
+                      {% csrf_token %}
+                        <label for="chk" aria-hidden="true">Login</label>
+                        <input type="email" name="email" placeholder="Email" required="">
+                        <input type="password" name="pswd" placeholder="Password" required="">
+                        <button>Login</button>
+                    </form>
+                </div>
+        </div>
+      </div>
+    </main>
+
+  </body>
+</html>

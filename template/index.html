@@ -16,12 +16,12 @@
     <!-- unicons icon pack css  -->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css">
   </head>
-  <body>
 
-    <!-- navigation bar  -->
+  <body>
+    <!-- ----------------navbar------------------ -->
     <nav>
       <div class="container">
-        <h2 class="logo">DigiCupid</h2>
+        <h2 class="logo"><a href="/">DigiCupid</a></h2>
         <div class="search-bar">
           <i class="uil uil-search"></i>
           <input type="search" placeholder="Search for Creators">
@@ -30,6 +30,9 @@
           <label class="btn btn-primary" for="#create-post">Create</label>
           <div class="profile-picture">
             <img src="{% static 'images/profile-1.jpg' %}" alt="">
+          </div>
+          <div class="login">
+            <a href="/" class="btn btn-primary">Login/SignUp</a>
           </div>
         </div>
       </div>
