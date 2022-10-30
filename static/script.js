@@ -37,7 +37,7 @@ const searchMessage = () => {
     })
 }
 
-//Search Chat
+//Search the individual chat system.
 messageSearch.addEventListener('keyup', searchMessage);
 
 // Highlight message box when the message menu item is clicked.
